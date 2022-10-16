@@ -1,10 +1,370 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif !important;    
+}
+
+.trip-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip {
+    max-width: 1070px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px auto;
+    padding-top: 12px;
+    padding-bottom: 27px;
+    padding-left: 25.5%;
+
+    border: #d4d4d4 .3px solid;
+    border-radius: 20px;
+
+    background-size: 467px 400px !important;
+    background-repeat: no-repeat !important;
+}
+
+.trip_first-tour-desktop {
+    background: url(/assets/images/desktop-first-tour-image.png);
+}
+
+.trip_second-tour-desktop {
+    background: url(/assets/images/desktop-second-tour-image.png);
+}
+
+.trip_third-tour-desktop {
+    background: url(/assets/images/desktop-third-tour-image.png);
+}
+
+.new-trip {
+    position: absolute;
+    width: 129px;
+    height: 43px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.new-trip_desktop {
+    left: 418px;
+    
+    font-weight: 600;
+
+    width: 154px;
+}
+
+.new-trip_desktop-blue {
+    margin-top: 40px;
+
+    background-color: #099CE8;
+
+    color: white;
+}
+
+.new-trip_desktop-yellow {
+    margin-top: 56px;
+
+    background-color: #FFD83B;
+
+    color: #323232;
+}
+
+.new-trip_mobile {
+    display: none;
+}
+
+.trip__image {
+    display: none;
+}
+
+.trip__duration {
+    order: 0;
+
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #9e9e9e;
+}
+
+.trip__duration img {
+    margin-right: 10px;
+}
+
+.trip__title {
+    order: -1;
+
+    color: black;
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 26px;
+}
+
+.trip__info {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.info-item {
+    color: #343434;
+    line-height: 20px;
+    font-size: 18px;
+
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.info-item:last-child {
+    margin: 0;
+}
+
+.info-item::marker {
+    content: url(/assets/icons/info-item-icon.svg);
+}
+
+.trips-list {
+    list-style-type: none;
+
+    display: flex;
+    height: 30px;
+
+    margin-left: 278px;
+    margin-top: -34px;
+    padding: 0;
+
+    flex-wrap: wrap;
+}
+
+.trips-list_overflow-hidden {
+    overflow: hidden;
+
+}
+
+.trips-list li {
+    margin-right: 4px;
+}
+
+.trips-list li:last-child {
+    margin: 0;
+}
+
+.trip-time {
+    border-radius: 11px !important;
+    background-color: #d9e8ff;
+
+    padding: 3px 14px !important;
+
+    transition: all .2s;
+}
+
+.trip-time_desktop {
+    display: none !important;
+}
+
+.trip-time:hover {
+    background-color: #b2c7e7 !important;
+}
+
+.trip-time:last-child {
+    margin: 0;
+}
+
+/* Кастомизация Bootstrap`ных чекбоксов */
+
+.btn {
+    background-color: #d9e8ff !important;
+    border: none !important;
+    color: black !important;
+  }
+
+  .btn:focus {
+    box-shadow: none !important;
+  }
+
+  .btn-primary:focus {
+    box-shadow: none !important;
+  }
+
+  .btn-check:focus {
+    box-shadow: none !important;
+  }
+
+  .btn-check:focus+.btn-primary {
+    box-shadow: none !important;
+  }
+
+  .btn-check:checked+.btn {
+    background-color: #6BA6FF !important;
+    color: white !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) !important;
+  }
+
+.trip__footer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 26px;
+}
+
+.more-info-btn {
+    background-color: #FFD83C;
+    
+    border: none;
+    border-radius: 23px;
+
+    padding: 12px 32px;
+
+    font-family: "Open Sans", sans-serif;
+    color: #292929;
+    font-weight: 400;
+}
+
+.trip__price-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    margin-right: 13px;
+
+    height: 100%;
+}
+
+.trip__price-text {
+    font-size: 36px;
 
     margin: 0;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 100vh;
+.trip__price-text-description {
+    font-size: 14px;
+
+    margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .trip {
+        width: 341px;
+        height: fit-content;
+
+        padding: 0;
+
+        background: none;
+    }
+
+    .trip_third-tour-desktop {
+        display: none;
+    }
+
+    .new-trip {
+        background: #7553ff;
+        border-radius: 15px 0px 12px;
+
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .new-trip_desktop {
+        display: none;
+    }
+
+    .new-trip_mobile {
+        display: flex;
+    }
+
+    .new-trip_mobile-yellow {
+        background: #FED74B;
+        color: #3E3E3E;
+
+        top: 70px;
+
+        border-radius: 0;
+    }
+
+    .trip__image {
+        display: block;
+    }
+
+    .trip__duration {
+        order: 0;
+
+        font-size: 12px;
+
+        margin-top: 14px;
+        margin-left: 12px;
+        margin-bottom: 0;
+    }
+
+    .trip__title {
+        order: 0;
+
+        font-size: 14px;
+        line-height: 22px;
+        color: #404040;
+        font-weight: 600;
+
+        margin-left: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .trip__info {
+        margin-left: 30px;
+    }
+
+    .info-item {
+        font-size: 14px;
+        color: #4b4b4b
+    }
+
+    .trips-list {
+        margin-left: 40px;
+        margin-top: 0;
+    }
+
+    .trip-time_desktop {
+        display: block !important;
+    }
+
+    .trip__footer {
+        margin-left: 10px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .trip__price-text {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .trip__price-text-description {
+        font-size: 10px;
+    }
+
+    .more-info-btn {
+        padding: 12px 49px;
+
+        background-color: #fed74b;
+
+        border-radius: 10px;
+        border: .5px solid #cba500;
+
+        font-weight: 600;
+        color: #404040;
+    }
+
+    .more-info-btn_round {
+        border-radius: 20px;
+    
+        padding: 12px 35px;
+    }
 }

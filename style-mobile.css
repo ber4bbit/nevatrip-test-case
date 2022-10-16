@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   body {
     overflow-x: hidden;
   }
@@ -37,17 +37,20 @@
   }
 
   .trip {
-    width: 341px;
+    width: 343px;
 
     display: flex;
 
     margin: 0 auto;
     margin-bottom: 30px;
+    padding: 0;
 
     flex-direction: column;
 
     border: #d4d4d4 0.3px solid;
     border-radius: 20px;
+
+    background: none;
   }
 
   .trip__image {
@@ -93,7 +96,7 @@
     padding-left: 20px;
     margin-bottom: 10px;
 
-    align-items: center;
+    /* align-items: center; */
   }
 
   .info-item:last-child {
