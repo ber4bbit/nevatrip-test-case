@@ -250,6 +250,30 @@ body {
     margin: 0;
 }
 
+/* Стили для промежуточных разрешений, чтобы все выглядело нормально, когда есть необходимо открыть devtools */
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .trip {
+        padding-left: 32%;
+    }
+
+    .new-trip_desktop {
+        left: 208px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .trip {
+        padding-left: 37%;
+    }
+
+    .new-trip_desktop {
+        left: 115px;
+    }
+}
+
+/* Стили для мобильных устройств */
+
 @media screen and (max-width: 400px) {
     .trip {
         width: 341px;
