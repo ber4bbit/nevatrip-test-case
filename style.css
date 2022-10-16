@@ -129,14 +129,17 @@ body {
 }
 
 .trips-list {
+    height: 40px;
+
     list-style-type: none;
 
     display: flex;
-    height: 30px;
 
     margin-left: 278px;
     margin-top: -34px;
     padding: 0;
+
+    line-height: 40px;
 
     flex-wrap: wrap;
 }
@@ -163,7 +166,7 @@ body {
     transition: all .2s;
 }
 
-.trip-time_desktop {
+.trip-time_hided-on-desktop {
     display: none !important;
 }
 
@@ -328,8 +331,8 @@ body {
         margin-top: 0;
     }
 
-    .trip-time_desktop {
-        display: block !important;
+    .trip-time_hided-on-desktop {
+        display: list-item !important;
     }
 
     .trip__footer {
@@ -343,7 +346,7 @@ body {
 
     .trip__price-text {
         font-size: 30px;
-        line-height: 20px;
+        line-height: 40px;
     }
 
     .trip__price-text-description {
