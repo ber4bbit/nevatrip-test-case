@@ -27,15 +27,15 @@ body {
 }
 
 .trip_first-tour-desktop {
-    background: url(/assets/images/desktop-first-tour-image.png);
+    background: url(./assets/images/desktop-first-tour-image.png);
 }
 
 .trip_second-tour-desktop {
-    background: url(/assets/images/desktop-second-tour-image.png);
+    background: url(./assets/images/desktop-second-tour-image.png);
 }
 
 .trip_third-tour-desktop {
-    background: url(/assets/images/desktop-third-tour-image.png);
+    background: url(./assets/images/desktop-third-tour-image.png);
 }
 
 .new-trip {
